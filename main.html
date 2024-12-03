@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер Единиц</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Конвертер единиц</h1>
+    <div id="converter">
+        <label for="unit-input">Введите значение:</label>
+        <input type="number" id="unit-input" placeholder="Например, 100">
+        <label for="unit-select">Выберите конвертацию:</label>
+        <select id="unit-select">
+            
+            <optgroup label="Температура">
+                <option value="c-to-f">°C → °F</option>
+                <option value="f-to-c">°F → °C</option>
+                <option value="c-to-k">°C → К</option>
+                <option value="k-to-c">К → °C</option>
+                <option value="f-to-k">°F → К</option>
+                <option value="k-to-f">К → °F</option>
+            </optgroup>
+            
+            <optgroup label="Расстояние">
+                <option value="km-to-mi">Км → Ми</option>
+                <option value="mi-to-km">Ми → Км</option>
+                <option value="m-to-ft">М → Футы</option>
+                <option value="ft-to-m">Футы → М</option>
+                <option value="cm-to-in">См → Дюймы</option>
+                <option value="in-to-cm">Дюймы → См</option>
+            </optgroup>
+            
+            <optgroup label="Скорость">
+                <option value="mps-to-kph">М/с → Км/ч</option>
+                <option value="kph-to-mps">Км/ч → М/с</option>
+                <option value="kph-to-mph">Км/ч → Миль/ч</option>
+                <option value="mph-to-kph">Миль/ч → Км/ч</option>
+                <option value="mps-to-mph">М/с → Миль/ч</option>
+                <option value="mph-to-mps">Миль/ч → М/с</option>
+            </optgroup>
+
+            <!-- Энергия -->
+            <optgroup label="Энергия">
+                <option value="j-to-cal">Дж → Кал</option>
+                <option value="cal-to-j">Кал → Дж</option>
+                <option value="kcal-to-j">Ккал → Дж</option>
+                <option value="j-to-kcal">Дж → Ккал</option>
+                <option value="kwh-to-j">КВт·ч → Дж</option>
+                <option value="j-to-kwh">Дж → КВт·ч</option>
+            </optgroup>
+            
+            <optgroup label="Объем">
+                <option value="liters-to-gallons">Литры → Галлоны</option>
+                <option value="gallons-to-liters">Галлоны → Литры</option>
+                <option value="ml-to-oz">Мл → Унции</option>
+                <option value="oz-to-ml">Унции → Мл</option>
+                <option value="cups-to-ml">Чашки → Мл</option>
+                <option value="ml-to-cups">Мл → Чашки</option>
+                <option value="pints-to-liters">Пинты → Литры</option>
+                <option value="liters-to-pints">Литры → Пинты</option>
+            </optgroup>
+            
+            <optgroup label="Объем информации">
+                <option value="b-to-kb">Биты → Килобайты</option>
+                <option value="kb-to-b">Килобайты → Биты</option>
+                <option value="kb-to-mb">Килобайты → Мегабайты</option>
+                <option value="mb-to-kb">Мегабайты → Килобайты</option>
+                <option value="mb-to-gb">Мегабайты → Гигабайты</option>
+                <option value="gb-to-mb">Гигабайты → Мегабайты</option>
+                <option value="gb-to-tb">Гигабайты → Терабайты</option>
+                <option value="tb-to-gb">Терабайты → Гигабайты</option>
+            </optgroup>
+        </select>
+        <button id="convert">Конвертировать</button>
+        <p id="conversion-result"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
