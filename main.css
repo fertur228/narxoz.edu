@@ -1,3 +1,23 @@
+/* Стили для header */
+header {
+    background-color: #48ab41; /* Светлый фон */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box; /* Учитывает отступы и границы в размерах */
+}
+
+header h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkblue;
+    padding-left: 60px;
+    margin: 0; /* Убирает возможные отступы вокруг заголовка */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -10,16 +30,18 @@ h1 {
 
 #converter {
     margin: 20px auto;
-    width: 300px;
+    width: 800px;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500;
+    height: 1500;
+    
 }
 
 #converter input, #converter select {
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin: 10px 0;
 }
 
@@ -33,4 +55,19 @@ h1 {
 #conversion-result {
     margin-top: 10px;
     font-weight: bold;
+}
+/* Стили для формулы */
+#conversion-formula {
+    margin-top: 10px; /* Расстояние сверху */
+    font-size: 14px; /* Размер шрифта */
+    font-style: Sans-serif; /* Курсив */
+    color: #555; /* Цвет текста */
+    text-align: center; /* Центровка текста */
+    background-color: #f9f9f9; /* Светлый фон */
+    padding: 5px 10px; /* Внутренние отступы */
+    
+    border: 1px solid #ddd; /* Светлая рамка */
+    width: fit-content; /* Подгон ширины под содержимое */
+    margin-left: auto; /* Центровка по горизонтали */
+    margin-right: auto;
 }
