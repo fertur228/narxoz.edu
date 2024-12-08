@@ -8,9 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>UnitEase</h1>
+        <h1>Unit<span style="color: whitesmoke;">Ease</span></h1>
     </header>
     
+    <h2><span style="color: darkgreen; font-family: sans-serif;">Мы делаем конвертации единиц лёгкими</span></h2>
     <div id="converter">
         <label for="unit-input">Введите значение:</label>
         <input type="number" id="unit-input" placeholder="Например, 100">
@@ -44,6 +45,18 @@
                 <option value="mph-to-mps">Миль/ч → М/с</option>
             </optgroup>
 
+            <optgroup label="Масса">
+                <option value="kg-to-lb">Килограммы → Фунты</option>
+                <option value="lb-to-kg">Фунты → Килограммы</option>
+                <option value="kg-to-g">Килограммы → Граммы</option>
+                <option value="g-to-kg">Граммы → Килограммы</option>
+                <option value="g-to-mg">Граммы → Миллиграммы</option>
+                <option value="mg-to-g">Миллиграммы → Граммы</option>
+                <option value="ton-to-kg">Тонны → Килограммы</option>
+                <option value="kg-to-ton">Килограммы → Тонны</option>
+            </optgroup>
+
+
             <!-- Энергия -->
             <optgroup label="Энергия">
                 <option value="j-to-cal">Дж → Кал</option>
@@ -64,6 +77,18 @@
                 <option value="pints-to-liters">Пинты → Литры</option>
                 <option value="liters-to-pints">Литры → Пинты</option>
             </optgroup>
+
+            <optgroup label="Площадь">
+                <option value="sqm-to-sqft">Квадратные метры → Квадратные футы</option>
+                <option value="sqft-to-sqm">Квадратные футы → Квадратные метры</option>
+                <option value="sqm-to-are">Квадратные метры → Ары</option>
+                <option value="are-to-sqm">Ары → Квадратные метры</option>
+                <option value="sqm-to-ha">Квадратные метры → Гектары</option>
+                <option value="ha-to-sqm">Гектары → Квадратные метры</option>
+                <option value="ha-to-acres">Гектары → Акры</option>
+                <option value="acres-to-ha">Акры → Гектары</option>
+            </optgroup>
+
             
             <optgroup label="Объем информации">
                 <option value="b-to-kb">Биты → Килобайты</option>
@@ -75,6 +100,32 @@
                 <option value="gb-to-tb">Гигабайты → Терабайты</option>
                 <option value="tb-to-gb">Терабайты → Гигабайты</option>
             </optgroup>
+
+            <optgroup label="Скорость передачи данных">
+                <option value="bps-to-kbps">Биты/сек → Килобиты/сек</option>
+                <option value="kbps-to-bps">Килобиты/сек → Биты/сек</option>
+                <option value="kbps-to-mbps">Килобиты/сек → Мегабиты/сек</option>
+                <option value="mbps-to-kbps">Мегабиты/сек → Килобиты/сек</option>
+                <option value="mbps-to-gbps">Мегабиты/сек → Гигабиты/сек</option>
+                <option value="gbps-to-mbps">Гигабиты/сек → Мегабиты/сек</option>
+                <option value="gbps-to-tbps">Гигабиты/сек → Терабиты/сек</option>
+                <option value="tbps-to-gbps">Терабиты/сек → Гигабиты/сек</option>
+            </optgroup>
+
+
+            <optgroup label="Частота">
+                <option value="hz-to-khz">Герцы → Килогерцы</option>
+                <option value="khz-to-hz">Килогерцы → Герцы</option>
+                <option value="khz-to-mhz">Килогерцы → Мегагерцы</option>
+                <option value="mhz-to-khz">Мегагерцы → Килогерцы</option>
+                <option value="mhz-to-ghz">Мегагерцы → Гигагерцы</option>
+                <option value="ghz-to-mhz">Гигагерцы → Мегагерцы</option>
+                <option value="hz-to-mhz">Герцы → Мегагерцы</option>
+                <option value="mhz-to-hz">Мегагерцы → Герцы</option>
+                <option value="hz-to-ghz">Герцы → Гигагерцы</option>
+                <option value="ghz-to-hz">Гигагерцы → Герцы</option>
+            </optgroup>
+
         </select>
         <button id="convert">Конвертировать</button>
         <p id="conversion-result"></p>
@@ -82,6 +133,55 @@
         <p id="fact"></p>
 
     </div>
+
+    <div id="calculator">
+        <h2>Калькулятор</h2>
+            <input type="number" id="calc-input1" placeholder="Число 1">
+            <input type="number" id="calc-input2" placeholder="Число 2">
+            <select id="calc-operation">
+                <option value="add">Сложение</option>
+                <option value="subtract">Вычитание</option>
+                <option value="multiply">Умножение</option>
+                <option value="divide">Деление</option>
+            </select>
+        <button id="calc-calculate">Вычислить</button>
+        <p id="calc-result"></p>
+    </div>
+
+    <div id="about-section">
+    <h2>О проекте UnitEase</h2>
+    <p>
+        Единица измерения — это величина, определяемая или принимаемая традицией или законом. 
+        Другие величины могут быть выражены как кратные данной единице.
+    </p>
+    <p>
+        В истории человечества существовали различные системы единиц измерения, которые разрабатывались 
+        и использовались в разных регионах и культурах. В настоящее время глобальным стандартом измерений 
+        является Международная система единиц (SI), которая представляет собой современную форму метрической системы. 
+        Однако, несмотря на её универсальность, SI не была полностью принята во всех странах, 
+        и некоторые другие системы измерения всё ещё используются в разных частях света.
+    </p>
+    <p>
+        Цель сайта UnitEase — предоставить удобный способ конвертировать различные единицы измерения между 
+        разными системами, а также предложить базовое понимание существующих систем и их взаимодействия.
+    </p>
+    <p>
+        Мы надеемся, что наш инструмент поможет вам упростить повседневные задачи, связанные с конвертацией единиц, 
+        и сэкономить ваше время.
+    </p>
+</div>
+<footer id="main-footer">
+    <div class="footer-content">
+        <a href="about.html">About Us</a> |
+        <a href="roadmap.html">Roadmap</a>
+    </div>
+    <div class="footer-copyright">
+        © 2023 - 2024 UnitEase
+    </div>
+</footer>
+
+
+
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,126 @@
+header {
+    background-color: #48ab41; /* Светлый фон */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box; /* Учитывает отступы и границы в размерах */
+}
+
+header h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkblue;
+    padding-left: 60px;
+    margin: 0; /* Убирает возможные отступы вокруг заголовка */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+#contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #48ab41;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #3a8b35;
+}
+#main-footer {
+    background-color: #333; /* Тёмный фон */
+    color: #fff; /* Белый текст */
+    padding: 15px 20px;
+    text-align: center; /* Центровка текста */
+    bottom: 0; /* Расположение у нижнего края */
+    left: 0;
+    width: 100%; /* Ширина на всю страницу */
+}
+
+#main-footer .footer-content a {
+    color: #48ab41; /* Зеленый цвет ссылок */
+    text-decoration: none; /* Убирает подчёркивание */
+    margin: 0 10px; /* Отступы между ссылками */
+    font-size: 14px; /* Размер шрифта */
+}
+
+#main-footer .footer-content a:hover {
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
+#main-footer .footer-copyright {
+    margin-top: 10px; /* Расстояние сверху */
+    font-size: 12px; /* Размер шрифта для копирайта */
+    color: #bbb; /* Более светлый текст */
+}
+
+#about-us-section,
+#contact-us-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: justify; /* Выровнять текст по ширине */
+    line-height: 1.6; /* Межстрочный интервал */
+    font-size: 16px; /* Размер текста */
+    color: #333; /* Цвет текста */
+}
+
+form {
+    margin-left: 20px; /* Отступ слева, совпадающий с текстом */
+    margin-right: 20px; /* Отступ справа для симметрии */
+}
+
+form label {
+    display: block; /* Каждый label занимает отдельную строку */
+    margin-bottom: 5px; /* Минимальный отступ от поля ввода */
+    text-align: left; /* Прижать текст к левому краю */
+}
+
+form input, 
+form textarea {
+    width: 100%; /* Поля ввода занимают всю ширину контейнера */
+    box-sizing: border-box; /* Учитывать внутренние отступы в ширине */
+    margin-bottom: 10px; /* Отступы между полями */
+}
+
+form button {
+    margin-top: 10px;
+}
+
+
+ #map {
+    width: 70%;
+    height: 300px;
+    margin: 20px auto; /* Выровнять по центру */
+    display: block; /* Убедитесь, что элемент ведёт себя как блок */
+}

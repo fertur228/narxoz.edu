@@ -29,7 +29,7 @@ h1 {
 }
 
 #converter {
-    margin: 20px auto;
+    margin: 0px auto;
     width: 800px;
     border: 1px solid #ccc;
     padding: 20px;
@@ -71,3 +71,85 @@ h1 {
     margin-left: auto; /* Центровка по горизонтали */
     margin-right: auto;
 }
+
+#calculator {
+    margin-top: 20px; /* Расстояние между конвертером и калькулятором */
+    width: 100%; /* Ширина калькулятора совпадает с шириной контейнера */
+    max-width: 500px; /* Максимальная ширина */
+    border: 1px solid #ccc; /* Светлая рамка */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #f9f9f9; /* Светлый фон */
+    margin-left: auto; /* Центровка блока по горизонтали */
+    margin-right: auto;
+}
+
+#calculator h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#calculator input, #calculator select, #calculator button {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#calc-result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#about-section {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9; /* Светлый фон */
+    border: 1px solid #ddd; /* Тонкая рамка */
+    text-align: left; /* Текст выровнен по левому краю */
+}
+
+#about-section h2 {
+    color: darkgreen; /* Зеленый цвет заголовка */
+    font-family: sans-serif;
+    font-size: 24px; /* Размер заголовка */
+    margin-bottom: 15px;
+    text-align: center; /* Центровка заголовка */
+}
+
+#about-section p {
+    font-size: 16px; /* Размер шрифта */
+    color: #555; /* Тёмно-серый текст */
+    line-height: 1.6; /* Увеличенный межстрочный интервал */
+    margin-bottom: 15px;
+}
+
+#main-footer {
+    background-color: #333; /* Тёмный фон */
+    color: #fff; /* Белый текст */
+    padding: 15px 20px;
+    text-align: center; /* Центровка текста */
+    bottom: 0; /* Расположение у нижнего края */
+    left: 0;
+    width: 100%; /* Ширина на всю страницу */
+}
+
+#main-footer .footer-content a {
+    color: #48ab41; /* Зеленый цвет ссылок */
+    text-decoration: none; /* Убирает подчёркивание */
+    margin: 0 10px; /* Отступы между ссылками */
+    font-size: 14px; /* Размер шрифта */
+}
+
+#main-footer .footer-content a:hover {
+    text-decoration: underline; /* Подчёркивание при наведении */
+}
+
+#main-footer .footer-copyright {
+    margin-top: 10px; /* Расстояние сверху */
+    font-size: 12px; /* Размер шрифта для копирайта */
+    color: #bbb; /* Более светлый текст */
+}
+

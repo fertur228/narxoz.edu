@@ -8,7 +8,7 @@ const factElement = document.getElementById("fact"); // Элемент для о
 
 
 const facts = {
-     "c-to-f": "Знаете ли вы, что самая высокая температура, зарегистрированная на Земле, составила 134°F (56.7°C) в Долине Смерти, Калифорния?",
+    "c-to-f": "Знаете ли вы, что самая высокая температура, зарегистрированная на Земле, составила 134°F (56.7°C) в Долине Смерти, Калифорния?",
     "f-to-c": "Знаете ли вы, что средняя температура тела человека составляет около 98.6°F (37°C)?",
     "c-to-k": "Знаете ли вы, что нулевая температура по Кельвину (-273.15°C) называется абсолютным нулем?",
     "k-to-c": "Знаете ли вы, что температура поверхности Солнца составляет около 5778 K?",
@@ -72,37 +72,37 @@ convertButton.addEventListener("click", () => {
         
         case "c-to-f":
             result = (value * 9 / 5) + 32;
-            formula = "°F = (°C × 9/5) + 32"; // Формула преобразования из Цельсия в Фаренгейт
+            formula = "°F = (°C × 9/5) + 32"; 
             conversionResult.textContent = `${value}°C = ${result.toFixed(2)}°F`;
             break;
 
         case "f-to-c":
             result = (value - 32) * 5 / 9;
-            formula = "°C = (°F - 32) × 5/9"; // Формула преобразования из Фаренгейта в Цельсий
+            formula = "°C = (°F - 32) × 5/9"; 
             conversionResult.textContent = `${value}°F = ${result.toFixed(2)}°C`;
             break;
 
         case "c-to-k":
             result = value + 273.15;
-            formula = "K = °C + 273.15"; // Формула преобразования из Цельсия в Кельвин
+            formula = "K = °C + 273.15"; 
             conversionResult.textContent = `${value}°C = ${result.toFixed(2)} K`;
             break;
 
         case "k-to-c":
             result = value - 273.15;
-            formula = "°C = K - 273.15"; // Формула преобразования из Кельвина в Цельсий
+            formula = "°C = K - 273.15"; 
             conversionResult.textContent = `${value} K = ${result.toFixed(2)}°C`;
             break;
 
         case "f-to-k":
             result = (value - 32) * 5 / 9 + 273.15;
-            formula = "K = (°F - 32) × 5/9 + 273.15"; // Формула преобразования из Фаренгейта в Кельвин
+            formula = "K = (°F - 32) × 5/9 + 273.15"; 
             conversionResult.textContent = `${value}°F = ${result.toFixed(2)} K`;
             break;
 
         case "k-to-f":
             result = (value - 273.15) * 9 / 5 + 32;
-            formula = "°F = (K - 273.15) × 9/5 + 32"; // Формула преобразования из Кельвина в Фаренгейт
+            formula = "°F = (K - 273.15) × 9/5 + 32"; 
             conversionResult.textContent = `${value} K = ${result.toFixed(2)}°F`;
             break;
 
@@ -110,37 +110,37 @@ convertButton.addEventListener("click", () => {
         // Расстояние
         case "km-to-mi":
             result = value * 0.621371;
-            formula = "Мили = Км × 0.621371"; // Формула преобразования из километров в мили
+            formula = "Мили = Км × 0.621371";
             conversionResult.textContent = `${value} км = ${result.toFixed(2)} миль`;
             break;
 
         case "mi-to-km":
             result = value / 0.621371;
-            formula = "Км = Мили / 0.621371"; // Формула преобразования из миль в километры
+            formula = "Км = Мили / 0.621371";
             conversionResult.textContent = `${value} миль = ${result.toFixed(2)} км`;
             break;
 
         case "m-to-ft":
             result = value * 3.28084;
-            formula = "Футы = Метры × 3.28084"; // Формула преобразования из метров в футы
+            formula = "Футы = Метры × 3.28084"; 
             conversionResult.textContent = `${value} м = ${result.toFixed(2)} футов`;
             break;
 
         case "ft-to-m":
             result = value / 3.28084;
-            formula = "Метры = Футы / 3.28084"; // Формула преобразования из футов в метры
+            formula = "Метры = Футы / 3.28084";
             conversionResult.textContent = `${value} футов = ${result.toFixed(2)} м`;
             break;
 
         case "cm-to-in":
             result = value / 2.54;
-            formula = "Дюймы = См / 2.54"; // Формула преобразования из сантиметров в дюймы
+            formula = "Дюймы = См / 2.54"; 
             conversionResult.textContent = `${value} см = ${result.toFixed(2)} дюймов`;
             break;
 
         case "in-to-cm":
             result = value * 2.54;
-            formula = "См = Дюймы × 2.54"; // Формула преобразования из дюймов в сантиметры
+            formula = "См = Дюймы × 2.54";
             conversionResult.textContent = `${value} дюймов = ${result.toFixed(2)} см`;
             break;
 
@@ -148,31 +148,31 @@ convertButton.addEventListener("click", () => {
         // Энергия
         case "j-to-cal":
             result = value / 4.184;
-            formula = "Кал = Дж / 4.184"; // Формула преобразования из джоулей в калории
+            formula = "Кал = Дж / 4.184";
             conversionResult.textContent = `${value} Дж = ${result.toFixed(2)} калорий`;
             break;
 
         case "cal-to-j":
             result = value * 4.184;
-            formula = "Дж = Кал × 4.184"; // Формула преобразования из калорий в джоули
+            formula = "Дж = Кал × 4.184"; 
             conversionResult.textContent = `${value} калорий = ${result.toFixed(2)} Дж`;
             break;
 
         case "kcal-to-j":
             result = value * 4184;
-            formula = "Дж = Ккал × 4184"; // Формула преобразования из килокалорий в джоули
+            formula = "Дж = Ккал × 4184"; 
             conversionResult.textContent = `${value} ккал = ${result.toFixed(2)} Дж`;
             break;
 
         case "j-to-kcal":
             result = value / 4184;
-            formula = "Ккал = Дж / 4184"; // Формула преобразования из джоулей в килокалории
+            formula = "Ккал = Дж / 4184"; 
             conversionResult.textContent = `${value} Дж = ${result.toFixed(2)} ккал`;
             break;
 
         case "kwh-to-j":
             result = value * 3600000;
-            formula = "Дж = КВт·ч × 3600000"; // Формула преобразования из киловатт-часов в джоули
+            formula = "Дж = КВт·ч × 3600000"; 
             conversionResult.textContent = `${value} кВт·ч = ${result.toFixed(2)} Дж`;
             break;
 
@@ -319,6 +319,216 @@ convertButton.addEventListener("click", () => {
             conversionResult.textContent = `${value} миль/ч = ${result.toFixed(2)} м/с`;
             break;
 
+                case "sqm-to-sqft":
+            result = value * 10.7639;
+            formula = "Кв. футы = Кв. метры × 10.7639"; // Формула преобразования из квадратных метров в квадратные футы
+            conversionResult.textContent = `${value} м² = ${result.toFixed(2)} фут²`;
+            break;
+
+        case "sqft-to-sqm":
+            result = value / 10.7639;
+            formula = "Кв. метры = Кв. футы / 10.7639"; // Формула преобразования из квадратных футов в квадратные метры
+            conversionResult.textContent = `${value} фут² = ${result.toFixed(2)} м²`;
+            break;
+
+        case "sqm-to-are":
+            result = value / 100;
+            formula = "Ары = Кв. метры / 100"; // Формула преобразования из квадратных метров в ары
+            conversionResult.textContent = `${value} м² = ${result.toFixed(2)} ары`;
+            break;
+
+        case "are-to-sqm":
+            result = value * 100;
+            formula = "Кв. метры = Ары × 100"; // Формула преобразования из ар в квадратные метры
+            conversionResult.textContent = `${value} ары = ${result.toFixed(2)} м²`;
+            break;
+
+        case "sqm-to-ha":
+            result = value / 10_000;
+            formula = "Гектары = Кв. метры / 10,000"; // Формула преобразования из квадратных метров в гектары
+            conversionResult.textContent = `${value} м² = ${result.toFixed(2)} га`;
+            break;
+
+        case "ha-to-sqm":
+            result = value * 10_000;
+            formula = "Кв. метры = Гектары × 10,000"; // Формула преобразования из гектаров в квадратные метры
+            conversionResult.textContent = `${value} га = ${result.toFixed(2)} м²`;
+            break;
+
+        case "ha-to-acres":
+            result = value * 2.47105;
+            formula = "Акры = Гектары × 2.47105"; // Формула преобразования из гектаров в акры
+            conversionResult.textContent = `${value} га = ${result.toFixed(2)} акров`;
+            break;
+
+        case "acres-to-ha":
+            result = value / 2.47105;
+            formula = "Гектары = Акры / 2.47105"; // Формула преобразования из акров в гектары
+            conversionResult.textContent = `${value} акров = ${result.toFixed(2)} га`;
+            break;
+
+        //скорость передачи данных
+        case "bps-to-kbps":
+            result = value / 1000;
+            formula = "Кбит/с = Бит/с / 1000"; // Формула преобразования из бит/с в килобиты/с
+            conversionResult.textContent = `${value} бит/с = ${result.toFixed(2)} Кбит/с`;
+            break;
+
+        case "kbps-to-bps":
+            result = value * 1000;
+            formula = "Бит/с = Кбит/с × 1000"; // Формула преобразования из килобитов/с в биты/с
+            conversionResult.textContent = `${value} Кбит/с = ${result.toFixed(2)} бит/с`;
+            break;
+
+        case "kbps-to-mbps":
+            result = value / 1000;
+            formula = "Мбит/с = Кбит/с / 1000"; // Формула преобразования из килобитов/с в мегабиты/с
+            conversionResult.textContent = `${value} Кбит/с = ${result.toFixed(2)} Мбит/с`;
+            break;
+
+        case "mbps-to-kbps":
+            result = value * 1000;
+            formula = "Кбит/с = Мбит/с × 1000"; // Формула преобразования из мегабитов/с в килобиты/с
+            conversionResult.textContent = `${value} Мбит/с = ${result.toFixed(2)} Кбит/с`;
+            break;
+
+        case "mbps-to-gbps":
+            result = value / 1000;
+            formula = "Гбит/с = Мбит/с / 1000"; // Формула преобразования из мегабитов/с в гигабиты/с
+            conversionResult.textContent = `${value} Мбит/с = ${result.toFixed(2)} Гбит/с`;
+            break;
+
+        case "gbps-to-mbps":
+            result = value * 1000;
+            formula = "Мбит/с = Гбит/с × 1000"; // Формула преобразования из гигабит/с в мегабиты/с
+            conversionResult.textContent = `${value} Гбит/с = ${result.toFixed(2)} Мбит/с`;
+            break;
+
+        case "gbps-to-tbps":
+            result = value / 1000;
+            formula = "Тбит/с = Гбит/с / 1000"; // Формула преобразования из гигабит/с в терабиты/с
+            conversionResult.textContent = `${value} Гбит/с = ${result.toFixed(2)} Тбит/с`;
+            break;
+
+        case "tbps-to-gbps":
+            result = value * 1000;
+            formula = "Гбит/с = Тбит/с × 1000"; // Формула преобразования из терабит/с в гигабиты/с
+            conversionResult.textContent = `${value} Тбит/с = ${result.toFixed(2)} Гбит/с`;
+            break;
+
+
+
+        //частота
+        case "hz-to-khz":
+            result = value / 1000;
+            formula = "КГц = Гц / 1000"; // Формула преобразования из герц в килогерцы
+            conversionResult.textContent = `${value} Гц = ${result.toFixed(2)} КГц`;
+            break;
+
+        case "khz-to-hz":
+            result = value * 1000;
+            formula = "Гц = КГц × 1000"; // Формула преобразования из килогерц в герцы
+            conversionResult.textContent = `${value} КГц = ${result.toFixed(2)} Гц`;
+            break;
+
+        case "khz-to-mhz":
+            result = value / 1000;
+            formula = "МГц = КГц / 1000"; // Формула преобразования из килогерц в мегагерцы
+            conversionResult.textContent = `${value} КГц = ${result.toFixed(2)} МГц`;
+            break;
+
+        case "mhz-to-khz":
+            result = value * 1000;
+            formula = "КГц = МГц × 1000"; // Формула преобразования из мегагерц в килогерцы
+            conversionResult.textContent = `${value} МГц = ${result.toFixed(2)} КГц`;
+            break;
+
+        case "mhz-to-ghz":
+            result = value / 1000;
+            formula = "ГГц = МГц / 1000"; // Формула преобразования из мегагерц в гигагерцы
+            conversionResult.textContent = `${value} МГц = ${result.toFixed(2)} ГГц`;
+            break;
+
+        case "ghz-to-mhz":
+            result = value * 1000;
+            formula = "МГц = ГГц × 1000"; // Формула преобразования из гигагерц в мегагерцы
+            conversionResult.textContent = `${value} ГГц = ${result.toFixed(2)} МГц`;
+            break;
+
+        case "hz-to-mhz":
+            result = value / 1_000_000;
+            formula = "МГц = Гц / 1,000,000"; // Формула преобразования из герц в мегагерцы
+            conversionResult.textContent = `${value} Гц = ${result.toFixed(2)} МГц`;
+            break;
+
+        case "mhz-to-hz":
+            result = value * 1_000_000;
+            formula = "Гц = МГц × 1,000,000"; // Формула преобразования из мегагерц в герцы
+            conversionResult.textContent = `${value} МГц = ${result.toFixed(2)} Гц`;
+            break;
+
+        case "hz-to-ghz":
+            result = value / 1_000_000_000;
+            formula = "ГГц = Гц / 1,000,000,000"; // Формула преобразования из герц в гигагерцы
+            conversionResult.textContent = `${value} Гц = ${result.toFixed(9)} ГГц`;
+            break;
+
+        case "ghz-to-hz":
+            result = value * 1_000_000_000;
+            formula = "Гц = ГГц × 1,000,000,000"; // Формула преобразования из гигагерц в герцы
+            conversionResult.textContent = `${value} ГГц = ${result.toFixed(2)} Гц`;
+            break;
+
+                case "kg-to-lb":
+            result = value * 2.20462;
+            formula = "Фунты = Кг × 2.20462"; // Формула преобразования из килограммов в фунты
+            conversionResult.textContent = `${value} кг = ${result.toFixed(2)} фунтов`;
+            break;
+
+        case "lb-to-kg":
+            result = value / 2.20462;
+            formula = "Кг = Фунты / 2.20462"; // Формула преобразования из фунтов в килограммы
+            conversionResult.textContent = `${value} фунтов = ${result.toFixed(2)} кг`;
+            break;
+
+        case "kg-to-g":
+            result = value * 1000;
+            formula = "Граммы = Кг × 1000"; // Формула преобразования из килограммов в граммы
+            conversionResult.textContent = `${value} кг = ${result.toFixed(2)} г`;
+            break;
+
+        case "g-to-kg":
+            result = value / 1000;
+            formula = "Кг = Граммы / 1000"; // Формула преобразования из граммов в килограммы
+            conversionResult.textContent = `${value} г = ${result.toFixed(2)} кг`;
+            break;
+
+        case "g-to-mg":
+            result = value * 1000;
+            formula = "Мг = Граммы × 1000"; // Формула преобразования из граммов в миллиграммы
+            conversionResult.textContent = `${value} г = ${result.toFixed(2)} мг`;
+            break;
+
+        case "mg-to-g":
+            result = value / 1000;
+            formula = "Граммы = Мг / 1000"; // Формула преобразования из миллиграммов в граммы
+            conversionResult.textContent = `${value} мг = ${result.toFixed(2)} г`;
+            break;
+
+        case "ton-to-kg":
+            result = value * 1000;
+            formula = "Кг = Тонны × 1000"; // Формула преобразования из тонн в килограммы
+            conversionResult.textContent = `${value} тонн = ${result.toFixed(2)} кг`;
+            break;
+
+        case "kg-to-ton":
+            result = value / 1000;
+            formula = "Тонны = Кг / 1000"; // Формула преобразования из килограммов в тонны
+            conversionResult.textContent = `${value} кг = ${result.toFixed(2)} тонн`;
+            break;
+
+
+
 
         default:
             alert("Ошибка: Неверный тип конверсии.");
@@ -339,4 +549,47 @@ convertButton.addEventListener("click", () => {
         factElement.textContent = ""; // Очистка, если факт отсутствует
     }
 
+});
+
+
+const calcInput1 = document.getElementById("calc-input1");
+const calcInput2 = document.getElementById("calc-input2");
+const calcOperation = document.getElementById("calc-operation");
+const calcCalculate = document.getElementById("calc-calculate");
+const calcResult = document.getElementById("calc-result");
+
+calcCalculate.addEventListener("click", () => {
+    const num1 = parseFloat(calcInput1.value);
+    const num2 = parseFloat(calcInput2.value);
+    const operation = calcOperation.value;
+
+    if (isNaN(num1) || isNaN(num2)) {
+        calcResult.textContent = "Ошибка: введите корректные числа.";
+        return;
+    }
+
+    let result;
+    switch (operation) {
+        case "add":
+            result = num1 + num2;
+            break;
+        case "subtract":
+            result = num1 - num2;
+            break;
+        case "multiply":
+            result = num1 * num2;
+            break;
+        case "divide":
+            if (num2 === 0) {
+                calcResult.textContent = "Ошибка: деление на ноль.";
+                return;
+            }
+            result = num1 / num2;
+            break;
+        default:
+            calcResult.textContent = "Ошибка: выбрана некорректная операция.";
+            return;
+    }
+
+    calcResult.textContent = `Результат: ${result}`;
 });
